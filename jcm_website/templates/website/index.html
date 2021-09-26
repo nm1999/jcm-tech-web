@@ -1,0 +1,310 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'w3css.css'%}">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css'%}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.min.js'%}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css'%}">
+	<script src="{% static 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'%}"></script>
+	<script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js'%}"></script>
+	<script src="{% static 'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js'%}"></script>
+    <title>Document</title>
+    <style>
+        .imgbk{
+            /* background-image:url('bg3.png');             */
+            background-size:100% 100%;
+            background:linear-gradient(-140deg,red 50%,skyblue 50%);
+        }
+        .img_border{
+            border:2px solid #ddd;
+            border-radius:5px;
+        }
+        .header{
+            background-color:green;
+        }
+        .options li{
+            text-decoration:none;
+            list-style-type: none;
+        }
+        .options li a{           
+            margin-right:5px;
+            color:white;          
+        }
+        .options li a:hover{
+            color:white;
+        }
+        .heading h2{
+            font-family:cursive;
+            color: white;
+            text-shadow: 4px 8px 4px #000000;
+            font-size:40px;
+            padding-top:50px;
+        }
+        .brief{
+            margin-top:100px;
+        }
+        .single-box{
+            border-radius:5px;
+            border:2px solid #ddd;
+        }
+        .desc{
+            margin-top:20px;
+        }
+        .fa-bars{
+            color:white;
+            font-size:20px;
+        }
+        .contact{
+            margin-top:30px;
+        }
+        .w3-card-4{
+            padding:10px;
+            width:95%
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul class="nav navbar">
+            <li><i class="fa fa-bars btn" onclick="opennav()"></i></li>
+            <li>
+                <div class="">
+                    <ul class="d-flex options">
+                        <li><a href=""> <u>login</u></a></li>
+                        <li><a href=""><u>SignUp</u></a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="imgbk img_fuild">
+        <div class="heading container">
+            <h2>JCM technologies</h2>
+        </div> 
+        <div class="row brief">
+            <div class="col-md-3">
+                <div class="join container">
+                    <div class="container">
+                        <p>For More Opportunities regarding technological solutions
+                            Create an account with us and get regular notifications
+                        </p>
+                    </div>
+                    <input type="submit" class="btn btn-success" id="" value="Create new accont">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <b>Our Histroy</b>
+                <div class="container">
+                    <p>JCM technologies was founder in late 2020`s by three individuals with intention to solve the 
+                    problem increased repair costs .</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <p><b>Goals</b></p>
+                <div class="container">
+                    <ul type="square">
+                        <li>To reduce costs of computer repair</li>
+                        <li>To enhance creative in the technology advances </li>
+                        <li>To give employment to the community</li>
+                        <li>To impart technological skills in new generation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <p><b>Short courses</b></p>
+                <div class="contianer">
+                    <p>We Offer short course like :</p>
+                    <ul>
+                        <li>Software Analysis</li>
+                        <li>Computer mechanics</li>
+                        <li>Cmputer graphics</li>
+                        <li>Computer Basics (MS Office)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- slider cards -->                
+        <div  class="carousel slide" data-ride="carousel">           
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="single-box w3-card-4 w3-white">
+                                <div class="img-area">
+                                    <img src="{% static 'img/hospital.jpg'%}" alt="" class="img-fluid" >
+                                </div> 
+                                <div class="w3-center">
+                                   <p style="padding:5px;"> Our Head of Offices @kampala</p>
+                                </div>                               
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single-box w3-card-4 w3-white">
+                                <div class="img-area">
+                                    <img src="{% static 'img/hospital.jpg'%}" class="img-fluid" alt="">
+                                </div>
+                                <div class="w3-center">
+                                   <p style="padding:5px;"> Our Head of Offices @kampala</p>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single-box w3-card-4 w3-white">
+                                <div class="img-area">
+                                    <img src="{% static 'img/hospital.jpg'%}" class="img-fluid"  alt="">
+                                </div>  
+                                <div class="w3-center">
+                                   <p style="padding:5px;"> Our Head of Offices @kampala</p>
+                                </div>                             
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="single-box w3-card-4 w3-white">
+                                <div class="img-area">
+                                    <img src="{% static 'img/image_1.jpg'%}" class="img-fluid"  alt="">
+                                </div>
+                                <div class="w3-center">
+                                   <p style="padding:5px;"> Our Head of Offices @kampala</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single-box w3-card-4 w3-white">
+                                <div class="img-area">
+                                    <img src="{% static 'img/image_2.jpg'%}" class="img-fluid"  alt="">
+                                </div>
+                                <div class="w3-center">
+                                   <p style="padding:5px;"> Our Head of Offices @kampala</p>
+                                </div>                             
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single-box w3-card-4 w3-white">
+                                <div class="img-area">
+                                    <img src="{% static 'img/hospital.jpg'%}" class="img-fluid"  alt="">
+                                </div>
+                                <div class="w3-center">
+                                   <p style="padding:5px;"> Our Head of Offices @kampala</p>
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="single-box w3-card-4 w3-white">
+                                <div class="img-area">
+                                    <img src="{% static 'img/course-2.jpg'%}" class="img-fluid"  alt="">
+                                </div>
+                                <div class="w3-center">
+                                   <p style="padding:5px;"> Our Head of Offices @kampala</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single-box w3-card-4 w3-white">
+                                <div class="img-area">
+                                    <img src="{% static 'img/course-1.jpg'%}" class="img-fluid"  alt="">
+                                </div>
+                                <div class="w3-center">
+                                   <p style="padding:5px;"> Our Head of Offices @kampala</p>
+                                </div>                             
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single-box w3-card-4 w3-white">
+                                <div class="img-area">
+                                    <img src="{% static 'img/hospital.jpg'%}" class="img-fluid"  alt="">
+                                </div>
+                                <div class="w3-center">
+                                   <p style="padding:5px;"> Our Head of Offices @kampala</p>
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="w3-center container">            
+            <h2>Our Location</h2>
+            <iframe src="https://googlemaps.com" frameborder="0" ></iframe>
+        </div>
+    <div class="Partners">
+        <h2 class="w3-center">Our Partners</h2>
+        <div class="row">
+            <div class="col-md-3 w3-card-4 w3-yellow w3-animate-left">
+                <div class="profile w3-center">
+                    <img src="{% static 'img/hospital.jpg'%}" alt="" style="border-radius:100%;width:50%;border:2px solid #ddd;height:auto">
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui vel ea corrupti neque quasi error ipsum cumque aliquid eligendi exercitationem, architecto fugiat deserunt alias, reprehenderit placeat incidunt porro consequatur nobis.</p>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3 w3-card-4 w3-yellow w3-animate-left">
+                <div class="profile w3-center">
+                    <img src="{% static 'img/hospital.jpg'%}" alt="" style="border-radius:100%;width:50%;border:2px solid #ddd;height:auto">
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui vel ea corrupti neque quasi error ipsum cumque aliquid eligendi exercitationem, architecto fugiat deserunt alias, reprehenderit placeat incidunt porro consequatur nobis.</p>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3 w3-card-4 w3-yellow w3-animate-left">
+                <div class="profile w3-center">
+                    <img src="{% static 'img/hospital.jpg'%}" alt="" style="border-radius:100%;width:50%;border:2px solid #ddd;height:auto">
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui vel ea corrupti neque quasi error ipsum cumque aliquid eligendi exercitationem, architecto fugiat deserunt alias, reprehenderit placeat incidunt porro consequatur nobis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="w3-black w3-animate-zoom">
+            <div class="row">
+                <div class="col-md-4 container-fluid">
+                    <h1>Contacts go here</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda iste fugiat quae delectus doloremque doloribus ad reprehenderit consectetur adipisci culpa! Vero et iusto esse dolorem nemo necessitatibus, aut fugit ipsam.</p>
+                </div><br>
+                <div class="col-md-4 container-fluid">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda iste fugiat quae delectus doloremque doloribus ad reprehenderit consectetur adipisci culpa! Vero et iusto esse dolorem nemo necessitatibus, aut fugit ipsam.</p>
+                </div><br>
+                <div class="col-md-4 container-fluid">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda iste fugiat quae delectus doloremque doloribus ad reprehenderit consectetur adipisci culpa! Vero et iusto esse dolorem nemo necessitatibus, aut fugit ipsam.</p>
+                </div><br>
+            </div>
+        </div>
+    </div>
+<div class="footer">
+
+</div>
+<div class="sidebar w3-sidenav">
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item2</li>
+        <li>Item4</li>
+        <li>Item1</li>
+        <li>Item1</li>
+    </ul>
+</div>
+<script>
+    function opennav(){
+        // document.getElementsByClassName("sidebar")[0].stle.display="block";
+        alert('Setting up sidebar navigation n a sec');
+    }
+</script>
+</body>
+</html>
